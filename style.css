@@ -1,0 +1,58 @@
+:root{
+--softBlue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--mainBg: hsl(217, 54%, 11%);
+--cardBg: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+}
+
+body {
+    font-size: 1.125rem;
+    background: var(--mainBg);
+}
+
+.card {
+    background: var(--cardBg);
+    color: #fff;
+}
+
+.softblue {
+    color:var(--softBlue);
+}
+
+.cyan {
+    color: var(--cyan);
+}
+
+.cursor-pointer {
+    cursor:pointer;
+}
+
+.cursor-pointer:hover {
+    color: var(--cyan);
+}
+
+.main-image-div {
+    position: relative;
+    cursor: pointer;
+    padding:.5rem;
+}
+
+.main-image-div:hover::before {
+    content: "";
+    height: 95%;
+    width: 95%;
+    background-color: var(--cyan);
+    opacity: .7;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    padding:1rem;
+    border-radius: 8px;
+}
+
+hr {
+    background-color: var(--line);
+    height:2px !important;
+}
